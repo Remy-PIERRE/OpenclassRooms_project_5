@@ -1,26 +1,27 @@
-body {
-	max-width: 1920px;
-	margin: auto;
-}
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+body {
+	max-width: 1920px;
+	margin: auto;
+}
 .top-header {
-	background-color: white;
-	position: sticky;
-	top:0;
-	z-index: 1000;
+	padding: 30px 100px;
 	display: flex;
 	justify-content: space-between;
-	padding-inline: 100px;
-	padding-block: 30px;
 	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: white;
 }
-
-.top-header .name {
+h1 {
 	font-size: 26px;
 }
+/* .name {
+	font-size: 26px;
+} */
 
 .nav ul {
 	display: flex;

@@ -1,7 +1,9 @@
 (function($) {
+
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
     var tagsCollection = [];
+
     return this.each(function() {
       $.fn.mauGallery.methods.createRowWrapper($(this));
       if (options.lightBox) {
@@ -150,7 +152,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i - 1;
         }
       });
       next =
@@ -163,6 +165,7 @@
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
+          console.log('active_image', activeImage);
         }
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
@@ -172,6 +175,7 @@
           if ($(this).children("img").length) {
             imagesCollection.push($(this).children("img"));
           }
+          console.log('image_collection', imagesCollection);
         });
       } else {
         $(".item-column").each(function() {
@@ -189,7 +193,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i + 1;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -240,7 +244,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 

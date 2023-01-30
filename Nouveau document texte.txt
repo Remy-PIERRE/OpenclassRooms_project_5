@@ -1,0 +1,21 @@
+images => changement dimentions / compression / changement format 
+
+css => padding-inline / padding bloc => inutile => padding
+	ajout de classe sur nombreux elements => descendre spécificité des élément css
+html => pas de h1 => h3 . name => h1
+
+utilisation CDN (Content Delivery Network).
+version 'minified' => version réduite d'un fichier au maximum => optimisé pour app déployée / difficile à lire pour un humain.
+
+lazy loading / pre load
+LCP
+picture => srcset
+
+
+/* fait */ 
+
+- CDN Bootstrap / propper pas utilisé => version sans (exit bundle)
+- déplacement des script bas de <body> => chargés après la création du html et css car bloquant
+
+
+- modification taille img / format => webp => réduit temps de chargement ++

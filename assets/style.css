@@ -82,11 +82,12 @@ h1 {
 }
 .about-me__introduction {
 	font-family: 'Spectral';
+	font-size: 16px;
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
-#about-me p {
+.about-me__text {
 	width: 80%;
 	font-size: 14px;
 }
@@ -103,7 +104,12 @@ h1 {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	/* color: #454545; */
+	/* -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000; */
+	/* font-weight: 800; */
+	/* background-color: #BEB45A; */
+	background-color: #7F7834;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -146,6 +152,7 @@ h1 {
 }
 .quote__text {
 	font-family: Spectral;
+	font-size: 26px;
 	font-style: italic;
 	font-weight: 300;
 

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" rel="preload">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=optional" rel="stylesheet" rel="preload">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" rel="preload">
 	<link rel="stylesheet" href="./assets/style.css" rel="preload">
 	<title>Nina Carducci _ Photographe</title>
@@ -29,7 +29,7 @@
 	</header>
 
 
-	<div id="header">
+	<section id="header">
 		<div id="main__caroussel" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#main__caroussel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,7 +77,7 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-	</div>
+	</section>
 
 
 	<article id="about">
@@ -89,7 +89,7 @@
 		</picture>
 
 		<div id="about-me">
-			<h2 class="about-me__title">A propos de moi</h2>
+			<h2 class="about-me__title" tabindex="0">A propos de moi</h2>
 			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 			<p class="about-me__text">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
@@ -97,8 +97,8 @@
 	</article>
 
 
-	<section id="gallery">
-		<h2 class="title">Portfolio</h2>
+	<main id="gallery">
+		<h2 class="title" tabindex="0">Portfolio</h2>
 
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
@@ -118,12 +118,12 @@
 					./assets/images/gallery/small/entreprises/ali-morshedlou-WMD64tMfc4k-unsplash-min-750.webp 750w,
 					./assets/images/gallery/small/entreprises/ali-morshedlou-WMD64tMfc4k-unsplash-min.webp 1000w"
 					loading="lazy">
-				<img src="./assets/images/gallery/small/entreprises/jason-goodman-tHO1_OuKbg0-unsplash-min.webp-750.webp" 
+				<img src="./assets/images/gallery/small/entreprises/jason-goodman-tHO1_OuKbg0-unsplash-min-750.webp" 
 					class="gallery-item" 
 					data-gallery-tag="Entreprises"
 					alt="Portrait d'un femme en train de sourire en entreprise"
 					srcset="
-					./assets/images/gallery/small/entreprises/jason-goodman-tHO1_OuKbg0-unsplash-min.webp-750.webp 750w,
+					./assets/images/gallery/small/entreprises/jason-goodman-tHO1_OuKbg0-unsplash-min-750.webp 750w,
 					./assets/images/gallery/small/entreprises/jason-goodman-tHO1_OuKbg0-unsplash-min.webp 1000w"
 					loading="lazy">
 				<img src="./assets/images/gallery/small/mariages/hannah-busing-RvF2R_qMpRk-unsplash-min-750.webp" 
@@ -185,16 +185,16 @@
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
-	</section>
+	</main>
 
 
-	<section id="services">
+	<article id="services" tabindex="0">
 		<h2 class="title">Mes services</h2>
 
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
-					<h3>Shooting photo</h3>
+					<h3 tabindex="0">Shooting photo</h3>
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
@@ -205,7 +205,7 @@
 
 			<div class="service">
 				<div class="service__description">
-					<h3>Retouches</h3>
+					<h3 tabindex="0">Retouches</h3>
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
 				<div class="service__price">
@@ -216,7 +216,7 @@
 
 			<div class="service">
 				<div class="service__description">
-					<h3>Album photos</h3>
+					<h3 tabindex="0">Album photos</h3>
 					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 				</div>
 				<div class="service__price">
@@ -225,23 +225,23 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</article>
 
 
-	<div class="quote">
+	<section class="quote">
 		<figure>
 			<blockquote>
 				<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
-	</div>
+	</section>
 
 
 	<footer id="contact">
 		<div class="container">
 			<div class="form-container">
-				<h3>Une question ? Une demande de devis ?</h3>
+				<h2>Une question ? Une demande de devis ?</h2>
 
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
@@ -259,7 +259,7 @@
 				<source media="(max-width: 950px)"
 				srcset="assets/images/other/smalls/camera-min-500.webp 500w">
 				<img src="assets/images/other/smalls/camera-min-700.webp" 
-				alt="Photo d'un appareil photo en gros plan"  loading="lazy">
+				alt=""  loading="lazy">
 			</picture>
 		</div>
 	</footer>

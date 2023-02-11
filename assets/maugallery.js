@@ -56,6 +56,13 @@
         return;
       }
     });
+    $(".gallery-item").on("keydown", function(event) {
+      if (options.lightBox && $(this).prop("tagName") === "IMG" && event.which == 13) {
+        $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
+      } else {
+        return;
+      }
+    });
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
     $(".gallery").on("click", ".mg-prev", () =>
@@ -104,6 +111,7 @@
           `Columns should be defined as numbers or objects. ${typeof columns} is not supported.`
         );
       }
+      element.attr('tabindex', '0');
     },
     moveItemInRowWrapper(element) {
       element.appendTo(".gallery-items-row");
@@ -150,7 +158,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i - 1;
         }
       });
       next =
@@ -189,7 +197,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i + 1;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -204,13 +212,13 @@
                         <div class="modal-body">
                             ${
                               navigation
-                                ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
+                                ? '<button class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</button>'
                                 : '<span style="display:none;" />'
                             }
                             <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
                             ${
                               navigation
-                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>'
+                                ? '<button class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></button>'
                                 : '<span style="display:none;" />'
                             }
                         </div>
@@ -240,7 +248,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 

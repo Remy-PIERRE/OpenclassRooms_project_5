@@ -23,6 +23,12 @@ a {
 
 
 
+.carousel-item img{
+	aspect-ratio: 11 / 5;
+}
+
+
+
 /*HEADER */
 header {
 	padding: 30px 100px;
@@ -55,11 +61,12 @@ nav ul {
 	background-color: #F6D2B8;
 	padding: 2em;
 	flex-direction: column;
-	min-height: 500px;
 }
 .article-about__picture {
 	z-index: 1;
-	min-height: 200px;
+}
+.article-about__picture img {
+	aspect-ratio: 1;
 }
 .article-about__picture::before {
 	content: '';
@@ -169,6 +176,9 @@ footer {
 	align-self: center;
 	z-index: 1;
 }
+.footer__picture img {
+	aspect-ratio: 1;
+}
 .footer__picture::after {
 	content: '';
 	background-color: #BEB45A;
@@ -215,7 +225,7 @@ footer {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #92893A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {

@@ -55,9 +55,11 @@ nav ul {
 	background-color: #F6D2B8;
 	padding: 2em;
 	flex-direction: column;
+	min-height: 500px;
 }
 .article-about__picture {
 	z-index: 1;
+	min-height: 200px;
 }
 .article-about__picture::before {
 	content: '';

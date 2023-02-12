@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Nina Carducci - Photographe</title>
+	<title>Nina Carducci - Photographe professionelle à Bordeaux centre</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Découvrez Nina Carducci, photographe professionnelle. Engagez la pour des shooting photo, retouches ou création d'album photo de qualité inégalable.">
+	<meta name="description" content="Découvrez Nina Carducci, photographe professionnelle: shooting photo (mariage, concert, portrait, ...) à Bordeaux centre. Consultez les tarifs.">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet preload" as="style" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link rel="stylesheet preload" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet preconect" as="font">
 	<link rel="preload" as="image" href="./assets/images/small/carousel/edward-cisneros-3-h6-1npdgw-unsp-1000.webp">
+
+	<!-- open graph data -->
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://nina-carducci.github.io/">
+	<meta property="og:title" content="Nina Carducci Photographie">
+	<meta property="og:description" content="Découvrez Nina Carducci, photographe professionnelle: shooting photo (mariage, concert, portrait, ...) à Bordeaux centre.">
+	<meta property="og:image" content="./assets/images/small/other/camera-750.webp">
+	<meta property="og:image:type" content="image/webp">
+	<meta property="og:image:width" content="750">
+	<meta property="og:image:height" content="750">
+	<meta property="og:image:alt" content="Portrait de Nina Carducci, photographe pofessionnelle">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="website">
+	<meta name="twitter:site" content="@publisher_handle">
+	<meta name="twitter:title" content="Page Title">
+	<meta name="twitter:description" content="Page description less than 200 characters">
+	<meta name="twitter:creator" content="@author_handle">
+	<-- Twitter Summary card images must be at least 200x200px -->
+	<meta name="twitter:image" content="http://www.example.com/image.jpg">
 	
 	
 </head>
@@ -18,7 +39,7 @@
 <body class="container-fluid">
 
 	<header class="top-header row justify-content-between align-items-center sticky-top">
-		<h1 class="header__title fs-3 col-12 col-sm-4 px-0">Nina Carducci</h1>
+		<h1 class="header__title fs-3 col-12 col-sm-4 px-0" itemprop=”name”>Nina Carducci</h1>
 		<nav class="nav col-12 justify-content-center px-0">   
 			<ul class="d-flex justify-content-between w-100 px-0 mb-0">
 				<li><a href="#about">À propos</a></li>
@@ -40,7 +61,7 @@
 			</div>
 			<div class="carousel-inner">
 				<picture class="carousel-item active">
-					<img src="./assets/images/small/carousel/edward-cisneros-3-h6-1npdgw-unsp-2000.webp" class="d-block w-100" alt="Photographie d'un couple dassant entouré du public"
+					<img src="./assets/images/small/carousel/edward-cisneros-3-h6-1npdgw-unsp-2000.webp" class="d-block w-100" alt="Photographie d'un couple dansant lors d'un mariage"
 					srcset="./assets/images/small/carousel/edward-cisneros-3-h6-1npdgw-unsp-1000.webp 1000w,
 					./assets/images/small/carousel/edward-cisneros-3-h6-1npdgw-unsp-2000.webp 2000w"
 					size="100vw">
@@ -72,128 +93,138 @@
 	</div>
 
 
-	<article id="about" class="article-about row align-items-center position-relative" tabindex="0">
-		<picture class="article-about__picture col-10 col-md-6 col-xl-4">
-			<img src="./assets/images/small/other/nina-1000.webp" class="img-fluid article-about__img w-100" alt="Photographie de Nina Carducci, photographe" 
-			srcset="./assets/images/small/other/nina-750.webp 750w,
-			./assets/images/small/other/nina-1000.webp 1000w"
-			sizes="(max-width: 575px) 80vw,
-			(min-width: 576px) and (max-width: 991px) 50vw, 30vw" 
-			loading="lazy">
-		</picture>
-		<div class="article-about__part--right d-flex flex-column justify-content-center col-12 col-lg-6 col-xl-8">
-			<h2 class="article-about__title fs-3 my-4 mt-lg-0 mt-xl-4 mb-lg-2 mb-xl-5">A propos de moi</h2>
-			<p class="spectral fw-bolder fst-italic col-12 col-xl-9 ">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-		</div>
-	</article>
-
-
-	<main id="gallery" class="row py-5">
-		<h2 class="text-center" tabindex="0">Portfolio</h2>
-		<div class="container py-3">
-			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/small/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash-1000.webp"
-				srcset="./assets/images/small/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash-750.webp 750w,
-				./assets/images/small/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Photographie lors d'un concert de Aaron Paul depuis le public">
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/small/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unspl-1000.webp"
-				srcset="./assets/images/small/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unspl-750.webp 750w,
-				./assets/images/small/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unspl-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Portrait d'un homme d'affaire vue de face">
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/small/gallery/entreprise/jason-goodman-tho1-oukbg0-unspla-1000.webp"
-				srcset="./assets/images/small/gallery/entreprise/jason-goodman-tho1-oukbg0-unspla-750.webp 750w,
-				./assets/images/small/gallery/entreprise/jason-goodman-tho1-oukbg0-unspla-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Portrait 3/4 profil d'une femme brune souriante">
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/small/gallery/mariage/hannah-busing-rvf2r-qmprk-unspla-1000.webp"
-				srcset="./assets/images/small/gallery/mariage/hannah-busing-rvf2r-qmprk-unspla-750.webp 750w,
-				./assets/images/small/gallery/mariage/hannah-busing-rvf2r-qmprk-unspla-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Photographie en gros plan des mains de 2 mariés se rejoignant">
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/small/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-1000.webp"
-				srcset="./assets/images/small/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-750.webp 750w,
-				./assets/images/small/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Portrait en gros plan d'un homme noir barbu éblouit par le soleil">
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/small/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-1000.webp"
-				srcset="./assets/images/small/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-750.webp 750w,
-				./assets/images/small/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Photographie d'un couple de jeunes mariés sous un palmier">
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/small/gallery/portraits/nino-van-prattenburg-443cl1ur-8-1000.webp"
-				srcset="./assets/images/small/gallery/portraits/nino-van-prattenburg-443cl1ur-8-750.webp 750w,
-				./assets/images/small/gallery/portraits/nino-van-prattenburg-443cl1ur-8-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Portrait d'une femme à lunette posant devant un grillage">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/small/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplas-1000.webp"
-				srcset="./assets/images/small/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplas-750.webp 750w,
-				./assets/images/small/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplas-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Photographie de Austin Neill sur scène lors d'un concert">
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/small/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-1000.webp"
-				srcset="./assets/images/small/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-750.webp 750w,
-				./assets/images/small/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-1000.webp 1000w"
-				sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
-				loading="lazy" alt="Photographie d'une femme habillée en robe à pois souriante">
+	<main>
+		<article id="about" class="article-about row align-items-center position-relative" tabindex="0">
+			<picture class="article-about__picture col-10 col-md-6 col-xl-4">
+				<img src="./assets/images/small/other/nina-1000.webp" class="img-fluid article-about__img w-100" alt="Portrait de Nina Carducci, photographe pofessionnelle" 
+				srcset="./assets/images/small/other/nina-750.webp 750w,
+				./assets/images/small/other/nina-1000.webp 1000w"
+				sizes="(max-width: 575px) 80vw,
+				(min-width: 576px) and (max-width: 991px) 50vw, 30vw" 
+				loading="lazy">
+			</picture>
+			<div class="article-about__part--right d-flex flex-column justify-content-center col-12 col-lg-6 col-xl-8">
+				<h2 class="article-about__title fs-3 my-4 mt-lg-0 mt-xl-4 mb-lg-2 mb-xl-5">A propos de moi</h2>
+				<p class="spectral fw-bolder fst-italic col-12 col-xl-9 ">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
-		</div>
+		</article>
+
+		<!-- <div itemscope itemtype=”http://schema.org/Hotel”>
+			
+			<div itemprop=”address” itemscope itemtype=”http://schema.org/PostalAddress”>
+			<span itemprop=”streetAddress”>68 avenue Alsace-Lorraine</span>
+			<span itemprop=”addressLocality”>Bordeaux</span>,
+			<span itemprop=”addressRegion”> Bordeaux</span>
+			<span itemprop=”postalCode”>33200</span>
+		</div> -->
+
+
+		<article id="gallery" class="row py-5">
+			<h2 class="text-center" tabindex="0">Portfolio</h2>
+			<div class="container py-3">
+				<div class="gallery" style="display: none">
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/small/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash-1000.webp"
+					srcset="./assets/images/small/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash-750.webp 750w,
+					./assets/images/small/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Photographie lors d'un concert de Aaron Paul depuis le public">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/small/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unspl-1000.webp"
+					srcset="./assets/images/small/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unspl-750.webp 750w,
+					./assets/images/small/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unspl-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Portrait d'un homme d'affaire vue de face">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/small/gallery/entreprise/jason-goodman-tho1-oukbg0-unspla-1000.webp"
+					srcset="./assets/images/small/gallery/entreprise/jason-goodman-tho1-oukbg0-unspla-750.webp 750w,
+					./assets/images/small/gallery/entreprise/jason-goodman-tho1-oukbg0-unspla-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Portrait 3/4 profil d'une femme brune souriante">
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/small/gallery/mariage/hannah-busing-rvf2r-qmprk-unspla-1000.webp"
+					srcset="./assets/images/small/gallery/mariage/hannah-busing-rvf2r-qmprk-unspla-750.webp 750w,
+					./assets/images/small/gallery/mariage/hannah-busing-rvf2r-qmprk-unspla-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Photographie en gros plan des mains de 2 mariés se rejoignant">
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/small/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-1000.webp"
+					srcset="./assets/images/small/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-750.webp 750w,
+					./assets/images/small/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Portrait en gros plan d'un homme noir barbu éblouit par le soleil">
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/small/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-1000.webp"
+					srcset="./assets/images/small/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-750.webp 750w,
+					./assets/images/small/gallery/mariage/jakob-owens-siniljkxhmc-unsplash-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Photographie d'un couple de jeunes mariés sous un palmier">
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/small/gallery/portraits/nino-van-prattenburg-443cl1ur-8-1000.webp"
+					srcset="./assets/images/small/gallery/portraits/nino-van-prattenburg-443cl1ur-8-750.webp 750w,
+					./assets/images/small/gallery/portraits/nino-van-prattenburg-443cl1ur-8-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Portrait d'une femme à lunette posant devant un grillage">
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/small/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplas-1000.webp"
+					srcset="./assets/images/small/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplas-750.webp 750w,
+					./assets/images/small/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplas-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Photographie de Austin Neill sur scène lors d'un concert">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/small/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-1000.webp"
+					srcset="./assets/images/small/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-750.webp 750w,
+					./assets/images/small/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-1000.webp 1000w"
+					sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, 30vw"
+					loading="lazy" alt="Portrait d'une femme habillée en robe à pois souriante">
+				</div>
+			</div>
+		</article>
+
+		
+		<figure class="row col-9 mx-auto py-5">
+			<blockquote>
+				<p class="spectral fw-light fst-italic fs-2">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
+			</blockquote>
+			<figcaption class="spectral fw-bolder fs-4">- Richard Avedon</figcaption>
+		</figure>
+		
+
+		<article id="service" class="article-service row position-relative">
+			<h2 class="article-service__title text-center py-5">Mes services</h2>
+			<div class="row justify-content-around mx-auto pb-4">
+				<div class="row col-12 col-lg-4 justify-content-center">
+					<div class="article-service__card col-11">
+						<div class="service__description">
+							<h3>Shooting photo</h3>
+							<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+						</div>
+						<div class="service__price">
+							<h4>350€/demi journée</h4>
+							<span>Matériel, déplacement inclus</span>
+						</div>
+					</div>
+				</div>
+				<div class="row col-12 col-lg-4 justify-content-center">
+					<div class="article-service__card col-11">
+						<div class="service__description">
+							<h3>Retouches</h3>
+							<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+						</div>
+						<div class="service__price">
+							<h4>50€/photo</h4>
+							<span>2 AR par photo</span>
+						</div>
+					</div>
+				</div>
+				<div class="row col-12 col-lg-4 justify-content-center">
+					<div class="article-service__card col-11">
+						<div class="service__description">
+							<h3>Album photos</h3>
+							<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+						</div>
+						<div class="service__price">
+							<h4>400€ album A4</h4>
+							<span>30 pages recto/verso</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
 	</main>
-
-	
-	<figure class="row col-9 mx-auto py-5">
-		<blockquote>
-			<p class="spectral fw-light fst-italic fs-2">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
-		</blockquote>
-		<figcaption class="spectral fw-bolder fs-4">- Richard Avedon</figcaption>
-	</figure>
-	
-
-	<article id="service" class="article-service row position-relative">
-		<h2 class="article-service__title text-center py-5">Mes services</h2>
-		<div class="row justify-content-around mx-auto pb-4">
-			<div class="row col-12 col-lg-4 justify-content-center">
-				<div class="article-service__card col-11">
-					<div class="service__description">
-						<h3>Shooting photo</h3>
-						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
-					</div>
-					<div class="service__price">
-						<h4>350€/demi journée</h4>
-						<span>Matériel, déplacement inclus</span>
-					</div>
-				</div>
-			</div>
-			<div class="row col-12 col-lg-4 justify-content-center">
-				<div class="article-service__card col-11">
-					<div class="service__description">
-						<h3>Retouches</h3>
-						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
-					</div>
-					<div class="service__price">
-						<h4>50€/photo</h4>
-						<span>2 AR par photo</span>
-					</div>
-				</div>
-			</div>
-			<div class="row col-12 col-lg-4 justify-content-center">
-				<div class="article-service__card col-11">
-					<div class="service__description">
-						<h3>Album photos</h3>
-						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-					</div>
-					<div class="service__price">
-						<h4>400€ album A4</h4>
-						<span>30 pages recto/verso</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</article>
-
 	
 	<figure class="row col-9 mx-auto py-5">
 		<blockquote>

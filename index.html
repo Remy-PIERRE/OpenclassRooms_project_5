@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Découvrez Nina Carducci, photographe professionnelle: shooting photo (mariage, concert, portrait, ...) à Bordeaux centre. Consultez les tarifs.">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet preload" as="style" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet preload" href="./assets/style.css">
+	<link rel="stylesheet preload" href="./assets/style_min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet preconect" as="font">
@@ -29,13 +29,14 @@
 	<meta name="twitter:site" content="@ninacarducci.photo">
 	<meta name="twitter:title" content="Nina Carducci - Photographe professionelle à Bordeaux centre">
 	<meta name="twitter:description" content="Découvrez Nina Carducci, photographe professionnelle: shooting photo (mariage, concert, portrait, ...) à Bordeaux centre.">
-	<meta name="twitter:image:src" content="./assets/images/small/other/nina-750.webp">
+	<meta name="twitter:image:src" content="https://remy-pierre.github.io/OpenclassRooms_project_5/assets/images/small/other/nina-750.webp">
 </head>
+
 
 <body class="container-fluid">
 
 	<header class="top-header row justify-content-between align-items-center sticky-top">
-		<h1 class="header__title fs-3 col-12 col-sm-4 px-0" itemprop=”name”>Nina Carducci</h1>
+		<h1 class="header__title fs-3 col-12 col-md-4 px-0 text-nowrap" itemscope itemtype="https://schema.org/Person"><span itemprop=”name”>Nina Carducci</span><br><span class="header__title--job" itemprop="jobTitle">Photographe professionnelle</span></h1>
 		<nav class="nav col-12 justify-content-center px-0">   
 			<ul class="d-flex justify-content-between w-100 px-0 mb-0">
 				<li><a href="#about">À propos</a></li>
@@ -100,21 +101,12 @@
 				loading="lazy">
 			</picture>
 			<div class="article-about__part--right d-flex flex-column justify-content-center col-12 col-lg-6 col-xl-8">
-				<h2 class="article-about__title fs-3 my-4 mt-lg-0 mt-xl-4 mb-lg-2 mb-xl-5">A propos de moi</h2>
+				<h2 class="article-about__title fs-3 my-4 mt-lg-0 mt-xl-4 mb-lg-2 mb-xl-5">La photographie et moi</h2>
 				<p class="spectral fw-bolder fst-italic col-12 col-xl-9 ">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
 		</article>
-
-		<!-- <div itemscope itemtype=”http://schema.org/Hotel”>
-			
-			<div itemprop=”address” itemscope itemtype=”http://schema.org/PostalAddress”>
-			<span itemprop=”streetAddress”>68 avenue Alsace-Lorraine</span>
-			<span itemprop=”addressLocality”>Bordeaux</span>,
-			<span itemprop=”addressRegion”> Bordeaux</span>
-			<span itemprop=”postalCode”>33200</span>
-		</div> -->
 
 
 		<article id="gallery" class="row py-5">
@@ -178,18 +170,18 @@
 			<figcaption class="spectral fw-bolder fs-4">- Richard Avedon</figcaption>
 		</figure>
 		
-
+		
 		<article id="service" class="article-service row position-relative">
-			<h2 class="article-service__title text-center py-5">Mes services</h2>
-			<div class="row justify-content-around mx-auto pb-4">
+			<h2 class="article-service__title text-center py-5">Mes services et tarifs</h2>
+			<div class="row justify-content-around mx-auto pb-4" itemscope itemtype="https://schema.org/Offer">
 				<div class="row col-12 col-lg-4 justify-content-center">
 					<div class="article-service__card col-11">
 						<div class="service__description">
-							<h3>Shooting photo</h3>
+							<h3 itemprop="serviceType">Shooting photo</h3>
 							<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 						</div>
 						<div class="service__price">
-							<h4>350€/demi journée</h4>
+							<h4 itemprop="price">350€/demi journée</h4>
 							<span>Matériel, déplacement inclus</span>
 						</div>
 					</div>
@@ -197,11 +189,11 @@
 				<div class="row col-12 col-lg-4 justify-content-center">
 					<div class="article-service__card col-11">
 						<div class="service__description">
-							<h3>Retouches</h3>
+							<h3 itemprop="serviceType">Retouches</h3>
 							<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 						</div>
 						<div class="service__price">
-							<h4>50€/photo</h4>
+							<h4 itemprop="price">50€/photo</h4>
 							<span>2 AR par photo</span>
 						</div>
 					</div>
@@ -209,11 +201,11 @@
 				<div class="row col-12 col-lg-4 justify-content-center">
 					<div class="article-service__card col-11">
 						<div class="service__description">
-							<h3>Album photos</h3>
+							<h3 itemprop="serviceType">Album photos</h3>
 							<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 						</div>
 						<div class="service__price">
-							<h4>400€ album A4</h4>
+							<h4 itemprop="price">400€ album A4</h4>
 							<span>30 pages recto/verso</span>
 						</div>
 					</div>
@@ -231,6 +223,37 @@
 	
 
 	<footer id="contact" class="row position-relative">
+
+		<div class="row col-12" itemscope itemtype="https://schema.org/Organization">
+			<h2 class="text-center py-5 pt-md-0">Contact</h2>
+			<div class="d-flex flex-wrap justify-content-center pb-5">
+				<div class="footer-contact__card col-12 col-sm-6 col-md-4" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+					<picture class="footer-contact__card--picture">
+						<img src="./assets/images/small/other/maison.webp" alt="Icone pour la rubrique adresse" width="75px">
+					</picture>
+					<h3 class="py-2 mb-0">Adresse</h3>
+					<p class="text-center"><span itemprop="streetAddress">68 avenue Alsace-Lorraine</span> <br> <span itemprop="postalCode">33200</span>, <span itemprop="addressLocality">Bordeaux</span></p>
+				</div>
+				<div class="footer-contact__card col-12 col-sm-6 col-md-4">
+					<picture class="footer-contact__card--picture">
+						<img src="./assets/images/small/other/appel-telephonique.webp" alt="Icone pour la rubrique numéro de téléphone" width="75px">
+					</picture>
+					<h3 class="py-2 mb-0">Téléphone</h3>
+					<p><span itemprop="telephone">05 56 67 78 89</span></p>
+				</div>
+				<div class="footer-contact__card col-12 col-sm-6 col-md-4">
+					<picture class="footer-contact__card--picture">
+						<img src="./assets/images/small/other/signe-ouvert.webp" alt="Icone pour la rubrique horaires d'ouverture" width="75px">
+					</picture>
+					<h3 class="py-2 mb-0">Horaires</h3>
+					<p class="text-center" itemscope itemtype="https://schema.org/LocalBusiness">
+						<span itemprop="openingHours" content="Mo,Tu,We,Th,Fr 10:00-19:00">Du lundi au vendredi <br> de 10h à 19h.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
 		<div class="row flex-column col-12 col-sm-10 col-lg-6 col-xl-8 mb-4">
 			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
@@ -258,7 +281,7 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous" async></script>
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="  crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/maugallery_min.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 
 </body>

@@ -154,6 +154,21 @@ nav ul {
 	display: flex;
 	font-size: 24px;
 }
+.gallery__evitement {
+	padding: 5px 15px;
+	border: 1px solid #000;
+	/* border-radius: 5px; */
+	background-color: #807833;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	clip-path: inset(100%);
+}
+.gallery__evitement:focus {
+	color: #fff;
+	clip-path: inset(2px);
+}
 
 
 
